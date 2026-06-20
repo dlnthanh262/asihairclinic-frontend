@@ -81,7 +81,8 @@ p {
 
 .btn-hover:hover {
   color: white;
-  background-color: rgba(66,66,66,0.76);
+  scale: 1.05;
+  transform: scale(1.05);
   transition: all ease .6s;
 }
 
@@ -320,6 +321,32 @@ p {
 
 .hover-yellow:hover {
   color: #DEB22F !important;
+}
+
+.nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover,
+.nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover p,
+.nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover i,
+.nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow,
+.nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow p,
+.nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow i {
+  color: #DEB22F !important;
+}
+
+.lever-2 .ps-2 > a:hover .hover-yellow,
+.lever-2 .ps-2 > a:hover .hover-yellow p,
+.lever-2 .ps-2 > a:hover .hover-yellow i {
+  color: #DEB22F !important;
+}
+
+.lever-2 .bg-white.hover-yellow:hover,
+.lever-2 .bg-white.hover-yellow:hover h5 {
+  color: #212529 !important;
+}
+
+.lever-2 .bg-white.hover-yellow:hover .ps-2 > a:not(:hover) .hover-yellow,
+.lever-2 .bg-white.hover-yellow:hover .ps-2 > a:not(:hover) .hover-yellow p,
+.lever-2 .bg-white.hover-yellow:hover .ps-2 > a:not(:hover) .hover-yellow i {
+  color: #212529 !important;
 }
 
 .text-color-main {

@@ -15,7 +15,7 @@
                             </div>
                         </nuxt-link>
                         <a
-                            class="home-hero-inline__phone"
+                            class="home-hero-inline__phone btn-hover"
                             :href="'tel:' + webConfig.phoneNumber"
                         ><i class="fa fa-phone home-hero-inline__phone-icon" aria-hidden="true"></i><span class="home-hero-inline__phone-text">{{ webConfig.phoneNumber }}</span></a>
                     </div>
@@ -30,7 +30,7 @@
             </div>
         </div>
     </section>
-    <section class="padding-section margin-top-section">
+    <section class="margin-top-section">
         <div class="container">
             <div class="row g-0">
                 <div class="col-xl-7">
@@ -61,6 +61,14 @@
                                     <div class="home-why-ahr__metric">
                                         <p class="home-why-ahr__metric-value">Houston</p>
                                         <p class="home-why-ahr__metric-label">Based</p>
+                                    </div>
+                                    <div class="home-why-ahr__metric">
+                                        <p class="home-why-ahr__metric-value">FUE</p>
+                                        <p class="home-why-ahr__metric-label">Specialists</p>
+                                    </div>
+                                    <div class="home-why-ahr__metric">
+                                        <p class="home-why-ahr__metric-value">ARTAS</p>
+                                        <p class="home-why-ahr__metric-label">Technology</p>
                                     </div>
                                 </div>
                             </div>
@@ -233,41 +241,62 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="home-artas-content">
         <div class="container"><!-- Start: section child 1 -->
             <div class="row g-0">
-                <div class="col-12 col-xl-6 bg-white m-top">
-                    <div class="shadow-custom"><!-- Start: text -->
+                <div class="col-12 col-xl-6 bg-white home-artas-overlap">
+                    <div class="shadow-custom pb-5"><!-- Start: text -->
                         <div class="d-xl-flex justify-content-xl-center py-3 px-3 px-xl-0 py-xl-5">
                             <div class="col-xl-8">
-                                <p class="justified-text py-2 home-body-text">ARTAS® combines advanced robotic technology with surgical expertise to enhance the precision of follicular unit extraction (FUE).</p>
-                                <p class="justified-text py-2 home-body-text">The system assists with identifying and harvesting healthy follicular units while helping preserve surrounding hair. This technology allows for consistent graft selection and can improve efficiency during the procedure.</p>
-                                <p class="justified-text py-2 home-body-text">At Aesthetic Hair Restoration, ARTAS technology is incorporated into a customized treatment approach designed around each patient&rsquo;s unique hair characteristics and restoration goals.</p>
+                                <p class="px-xl-0 fs-4 fw-bold py-xl-3 text-uppercase home-section-heading" style="color:#DEB22F;">Why ARTAS®?<br></p>
+                                <p class="justified-text py-2 home-body-text">ARTAS® supports a more precise approach to hair restoration, helping optimize follicular unit harvesting while preserving surrounding hair.</p>
+                                <p class="justified-text pt-2 home-body-text">Combined with Dr. Do's experience and individualized treatment planning, this advanced technology helps create natural-looking results designed around each patient's goals.</p>
                             </div>
                         </div><!-- End: text --><!-- Start: btn -->
-                        <div class="d-flex d-xl-flex justify-content-center flex-xl-column justify-content-xl-center align-items-xl-center py-4 my-5"><nuxt-link class="text-decoration-none text-white" to="/hair-transplantation/artas-ix-robotic-hair-restoration/">
-                                <div class="d-flex justify-content-center align-items-center py-4 px-4 btn-hover poiter text-white bg-black" style="min-height: auto;">
-                                    <div>
-                                        <p class="text-uppercase fw-bold mb-0">Learn More About ARTAS</p>
-                                        <div class="align-self-start mt-1" style="width: 40px;height: 2px;background: #ffffff;"></div>
-                                    </div>
+                        <div class="mb-3 home-hero-inline__actions" style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem;justify-content:center;">
+                            <nuxt-link class="text-decoration-none d-inline-block" to="/hair-transplantation/artas-ix-robotic-hair-restoration/"">
+                                <div class="btn-black btn-hover text-center home-hero-inline__cta" style="min-width:220px;padding:0.875rem 2rem !important;border-radius:0;">
+                                    <p class="text-uppercase mb-0 fw-bold">Learn More About ARTAS</p>
                                 </div>
-                            </nuxt-link></div><!-- End: btn -->
+                            </nuxt-link>
+                        </div>    
+                            <!-- End: btn -->
                     </div>
                 </div>
                 <div class="col">
-                    <div class="d-xl-flex justify-content-xl-center align-items-xl-center justify-content-xxl-center shadow-custom py-4 m-xl-5 py-xl-5">
+                    <div class="bg-black text-white d-xl-flex justify-content-xl-center align-items-xl-center justify-content-xxl-center shadow-custom py-4 m-xl-5 py-xl-5">
                         <div class="col-xl-9">
                             <div>
-                                <p class="px-xl-0 fs-4 fw-bold py-xl-3 text-uppercase home-section-heading">Here&rsquo;s how ARTAS® benefits you:<br></p>
-                                <ul class="home-body-text">
-                                    <li class="my-2">Robotic-assisted follicle selection for precise graft harvesting</li>
-                                    <li class="my-2">Digital mapping to help identify strong donor hairs</li>
-                                    <li class="my-2">No long linear incision required</li>
-                                    <li class="my-2">Physician-guided technology with surgical oversight</li>
-                                    <li class="my-2">Natural-looking graft placement planning</li>
-                                    <li class="my-2">Minimally invasive approach compared with traditional strip surgery</li>
-                                    <li class="my-2">Recovery guidance designed to support healing and comfort</li>
+                                <p class="px-xl-0 fs-4 fw-bold py-xl-3 text-uppercase home-section-heading">how ARTAS® benefits you:<br></p>
+                                <ul class="home-check-list home-body-text-light">
+                                    <li class="home-check-list__item">
+                                        <span class="home-check-list__icon" aria-hidden="true"><i class="fa fa-check"></i></span>
+                                        <span>Advanced robotic-assisted precision</span>
+                                    </li>
+                                    <li class="home-check-list__item">
+                                        <span class="home-check-list__icon" aria-hidden="true"><i class="fa fa-check"></i></span>
+                                        <span>Natural-looking hairline and density planning</span>
+                                    </li>
+                                    <li class="home-check-list__item">
+                                        <span class="home-check-list__icon" aria-hidden="true"><i class="fa fa-check"></i></span>
+                                        <span>No long linear donor scar</span>
+                                    </li>
+                                    <li class="home-check-list__item">
+                                        <span class="home-check-list__icon" aria-hidden="true"><i class="fa fa-check"></i></span>
+                                        <span>Personalized treatment guided by Dr. Do</span>
+                                    </li>
+                                    <li class="home-check-list__item">
+                                        <span class="home-check-list__icon" aria-hidden="true"><i class="fa fa-check"></i></span>
+                                        <span>Designed to help preserve surrounding hair</span>
+                                    </li>
+                                    <li class="home-check-list__item">
+                                        <span class="home-check-list__icon" aria-hidden="true"><i class="fa fa-check"></i></span>
+                                        <span>Minimally invasive approach with modern FUE technology</span>
+                                    </li>
+                                    <li class="home-check-list__item">
+                                        <span class="home-check-list__icon" aria-hidden="true"><i class="fa fa-check"></i></span>
+                                        <span>Comprehensive recovery and aftercare support</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -279,33 +308,43 @@
                     <div class="col-12 col-xl-6 shadow"><img class="w-100 h-100 obj-cover" src="/static/24.jpg" alt="Hair Transplant"></div>
                     <div class="col">
                         <div class="p-xl-5 m-xl-5">
-                            <h2 class="pt-4 pt-xl-2 pb-2 fw-bold text-uppercase home-section-heading">Hair Transplant</h2>
-                            <p class="py-2 justified-text home-body-text">Hair transplantation remains one of the most effective long-term solutions for restoring hair growth in areas affected by thinning or hair loss.</p>
-                            <p class="py-2 justified-text home-body-text">Our team offers both Follicular Unit Extraction (FUE) and Follicular Unit Transplantation (FUT), allowing treatment plans to be tailored based on hair loss pattern, donor availability, lifestyle, and desired results.</p>
-                            <p class="py-2 justified-text home-body-text">FUE removes individual follicular units from the donor area, usually leaving tiny dot-like marks that are difficult to notice once healed.</p>
-                            <p class="py-2 justified-text home-body-text">FUT may be recommended for patients who need a larger number of grafts in one session, but it can leave a linear scar in the donor area.</p>
-                            <p class="py-2 justified-text home-body-text">During your consultation, Dr. Do will evaluate your goals and recommend the approach best suited to your situation.</p><nuxt-link class="text-decoration-none text-white" to="/hair-transplantation/fue-hair-transplant">
-                                <div class="d-flex d-xl-flex justify-content-center flex-xl-column justify-content-xl-center align-items-xl-center py-4 btn-hover my-5 poiter text-white" style="background: black;">
-                                    <div>
-                                        <p class="text-uppercase">Read More About FUE</p>
-                                        <div class="align-self-start mt-1" style="width: 40px;height: 2px;background: #ffffff;"></div>
+                            <h2 class="pt-4 pt-xl-2 pb-2 fw-bold text-uppercase home-section-heading home-why-ahr__heading" style="color:#DEB22F;">Hair Transplant</h2>
+                            <p class="py-2 justified-text home-body-text">Hair transplantation can provide a long-term solution for thinning hair, receding hairlines, and areas affected by hair loss.</p>
+                            <p class="py-2 justified-text home-body-text">Using advanced FUE and FUT techniques, Dr. Do and the Aesthetic Hair Restoration team create personalized treatment plans designed around each patient's unique goals.</p>
+                            <p class="py-2 justified-text home-body-text">Every procedure is focused on achieving natural-looking results that complement your appearance today and for years to come.</p>
+                            <div class="mt-5 home-hero-inline__actions" style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem;justify-content:start;">
+                                <nuxt-link class="text-decoration-none d-inline-block" to="/hair-transplantation/fue-hair-transplant"">
+                                    <div class="btn-black btn-hover text-center home-hero-inline__cta" style="min-width:220px;padding:0.875rem 2rem !important;border-radius:0;">
+                                        <p class="text-uppercase mb-0 fw-bold">Learn More About FUE</p>
                                     </div>
-                                </div>
-                            </nuxt-link>
+                                </nuxt-link>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- End: section child 3 --><!-- Start: section child 2 -->
-            <div class="shadow-custom m-xl-5 p-xl-5 margin-section">
-                <div class="row g-0">
-                    <div class="col-12 col-xl-6 d-xl-flex d-xxl-flex justify-content-xl-center align-items-xl-center align-items-xxl-center">
-                        <div class="d-flex flex-column justify-content-center align-items-center p-5 h-100">
-                            <h2 class="py-2 text-uppercase">FUE hair loss treatment using Artas</h2>
-                            <p class="py-2">Dr. Do guides viewers through a detailed consultation, emphasizing personalized approaches.&nbsp;</p>
+            </div><!-- End: section child 3 -->
+            <div class="home-video-banner margin-section"><!-- Start: section child 2 -->
+                <div class="home-video-banner__frame">
+                    <div class="home-video-banner__frame-inner">
+                        <div class="home-video-banner__media">
+                            <client-only>
+                                <video
+                                    class="home-video-banner__video"
+                                    controls
+                                    autoplay
+                                    muted
+                                    loop
+                                    playsinline
+                                    preload="metadata"
+                                    :src="webConfig.srcVideo1"
+                                ></video>
+                            </client-only>
+                            <div class="home-video-banner__content">
+                                <p class="home-video-banner__eyebrow">ARTAS® TECHNOLOGY</p>
+                                <h2 class="home-video-banner__heading"><span class="home-video-banner__heading-accent">FUE Hair Restoration</span> with ARTAS®</h2>
+                                <p class="home-video-banner__subheading">Discover how Dr. Do combines advanced FUE techniques with ARTAS® technology to help patients achieve natural-looking, long-lasting hair restoration results.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="h-100 reponsive-section-3"><client-only><video class="h-100 w-100" controls="" muted="" style="min-height: 30vh;" :src="webConfig.srcVideo1"></video></client-only></div>
                     </div>
                 </div>
             </div><!-- End: section child 2 -->
@@ -883,6 +922,10 @@ import 'splitpanes/dist/splitpanes.css';
   color: #252525;
 }
 
+.bg-black .home-section-heading {
+  color: #fff;
+}
+
 .home-body-text {
   color: #606060;
 }
@@ -945,7 +988,6 @@ import 'splitpanes/dist/splitpanes.css';
 
 .home-why-ahr__metric {
   padding: 1.25rem 1rem;
-  background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
   border: 1px solid rgba(37, 37, 37, 0.08);
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
@@ -957,8 +999,8 @@ import 'splitpanes/dist/splitpanes.css';
 
 .home-why-ahr__metric-value {
   margin: 0;
-  font-weight: 700;
-  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #DEB22F;
@@ -998,12 +1040,13 @@ import 'splitpanes/dist/splitpanes.css';
   gap: 0.5rem;
   min-width: 220px;
   padding: 0.875rem 2rem;
-  background: transparent;
+  background-color: rgba(255, 255, 255, 0.14);
   border: none;
-  color: #ffffff;
+  color: #DEB22F;
   font-weight: 700;
   text-decoration: none;
   transition: background-color 0.25s ease, color 0.25s ease;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
 .home-hero-inline__phone-icon {
@@ -1016,11 +1059,6 @@ import 'splitpanes/dist/splitpanes.css';
   text-decoration: underline;
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
-}
-
-.home-hero-inline__phone:hover {
-  background-color: rgba(255, 255, 255, 0.14);
-  color: #DEB22F;
 }
 
 .home-hero-inline__phone:hover .home-hero-inline__phone-text {

@@ -15,24 +15,24 @@
                 <div style="width: 100%; display: flex; align-items: center;">
                     <div class="d-flex justify-content-xl-center align-items-xl-center" style="flex: 1;">
                         <ul class="nav nav-tabs disable-border-nav">
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none visible-header-home" to="/" :class="{'text-dark':scrolled}">
+                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none visible-header-home" to="/">
                                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
                                         <p class="text-uppercase">HOME</p>
                                     </div>
                                 </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/about/" :class="{'text-dark':scrolled}">
+                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/about/">
                                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
                                         <p class="text-uppercase">ABOUT</p>
                                     </div>
                                 </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link nav-header-hover txt-header poiter text-decoration-none" to="/hair-transplantation/" :class="{'text-dark':scrolled}">
+                            <li class="nav-item"><nuxt-link class="nav-link nav-header-hover txt-header poiter text-decoration-none" to="/hair-transplantation/">
                                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
                                         <p class="text-uppercase">Hair Transplantation</p><i class="fa fa-caret-down ms-2"></i>
                                     </div>
                                     <div class="lever-2 bg-transparent px-1 font-size-reponsive-header" style="opacity: 0;display: none;">
                                         <div class="row g-0">
                                             <div class="col">
-                                                <div class="bg-white h-100 p-4 text-dark hover-yellow">
+                                                <div class="bg-white h-100 p-4 text-dark">
                                                     <h5 class="text-uppercase">hair transplant method:</h5>
                                                     <div class="ps-2"><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/artas-ix-robotic-hair-restoration">
                                                             <div class="d-flex flex-row justify-content-start justify-content-xxl-start align-items-xxl-center px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
@@ -66,7 +66,7 @@
                                                 </div>
                                             </div>
                                             <div class="col">
-                                                <div class="bg-white h-100 p-4 text-dark hover-yellow">
+                                                <div class="bg-white h-100 p-4 text-dark">
                                                     <h5 class="text-uppercase">hair transplant:</h5>
                                                     <div class="ps-2"><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/male-hair-transplants/">
                                                             <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
@@ -90,12 +90,12 @@
                                         </div>
                                     </div>
                                 </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link nav-header-hover txt-header poiter text-decoration-none" to="/patient-resources" :class="{'text-dark':scrolled}">
+                            <li class="nav-item"><nuxt-link class="nav-link nav-header-hover txt-header poiter text-decoration-none" to="/patient-resources">
                                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
                                         <p class="d-xl-flex justify-content-xl-start text-uppercase">Patient Resources</p><i class="fa fa-caret-down ms-2"></i>
                                     </div>
                                     <div class="lever-2 bg-transparent px-1" style="opacity: 0;display: none;">
-                                        <div class="bg-white h-100 p-4 text-dark hover-yellow font-size-reponsive-header">
+                                        <div class="bg-white h-100 p-4 text-dark font-size-reponsive-header">
                                             <h5 class="text-uppercase">Patient Resources:</h5>
                                             <div class="ps-2"><nuxt-link class="btn-hover poiter text-decoration-none" to="/patient-resources/hair-transplant-consultation/">
                                                     <div class="d-flex flex-row justify-content-start justify-content-xxl-start align-items-xxl-center px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
@@ -117,22 +117,22 @@
                                         </div>
                                     </div>
                                 </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/hair-loss-history/" :class="{'text-dark':scrolled}">
+                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/hair-loss-history/">
                                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
                                         <p class="text-uppercase">Hair Loss History</p>
                                     </div>
                                 </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/gallery" :class="{'text-dark':scrolled}">
+                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/gallery">
                                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
                                         <p class="text-uppercase">Gallery</p>
                                     </div>
                                 </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/blogs" :class="{'text-dark':scrolled}">
+                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/blogs">
                                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
                                         <p class="text-uppercase">BLOGS</p>
                                     </div>
                                 </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link nav-header-hover txt-header poiter text-decoration-none" to="/contact" :class="{'text-dark':scrolled}">
+                            <li class="nav-item"><nuxt-link class="nav-link nav-header-hover txt-header poiter text-decoration-none" to="/contact">
                                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
                                         <p class="text-uppercase">contact</p>
                                     </div>
@@ -140,20 +140,20 @@
                         </ul>
                     </div>
                     <div style="display:flex;align-items:center;justify-content:flex-end;gap:0.35rem;flex-shrink:0;font-style:italic;font-size:0.8125rem;padding-left:1rem;white-space:nowrap;">
-                        <i class="fa fa-comment-o" aria-hidden="true" style="font-size:0.875rem;font-style:normal;" :style="{ color: scrolled ? '#212529' : '#ffffff' }"></i>
-                        <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;" :style="{ color: scrolled ? '#212529' : '#ffffff' }">English</a>
-                        <span style="font-style:normal;" :style="{ color: scrolled ? 'rgba(33,37,41,0.55)' : 'rgba(255,255,255,0.75)' }">|</span>
-                        <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;" :style="{ color: scrolled ? '#212529' : '#ffffff' }">Spanish</a>
+                        <i class="fa fa-comment-o" aria-hidden="true" style="font-size:0.875rem;font-style:normal;color:#ffffff;"></i>
+                        <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;color:#ffffff;">English</a>
+                        <span style="font-style:normal;color:rgba(255,255,255,0.75);">|</span>
+                        <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;color:#ffffff;">Spanish</a>
                     </div>
                 </div>
             </div>
             <div class="col d-flex d-xl-none justify-content-between align-items-center px-3">
                 <div style="display:flex;align-items:center;gap:0.35rem;font-style:italic;font-size:0.8125rem;">
-                    <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;" :style="{ color: scrolled ? '#212529' : '#ffffff' }">English</a>
-                    <span style="font-style:normal;" :style="{ color: scrolled ? 'rgba(33,37,41,0.55)' : 'rgba(255,255,255,0.75)' }">|</span>
-                    <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;" :style="{ color: scrolled ? '#212529' : '#ffffff' }">Spanish</a>
+                    <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;color:#ffffff;">English</a>
+                    <span style="font-style:normal;color:rgba(255,255,255,0.75);">|</span>
+                    <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;color:#ffffff;">Spanish</a>
                 </div>
-                <div class="d-flex justify-content-end align-items-center h-100 pe-3" @click="isshowoffcanvas=!isshowoffcanvas">
+                <div class="d-flex justify-content-end align-items-center h-100 pe-3 header-mobile-menu" @click="isshowoffcanvas=!isshowoffcanvas">
                     <p>MENU</p><i class="fa fa-align-justify fs-5 ms-2 fw-light"></i>
                 </div>
             </div>
@@ -640,6 +640,56 @@ function debounce(func, wait) {
 .header-home.header-over-hero .nav-link:focus {
   background-color: transparent !important;
   border-color: transparent !important;
+}
+
+.header-home.scroll-header-top {
+  background-color: #252525 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.header-home.scroll-header-top .header-nav-row,
+.header-home.scroll-header-top .header-nav-row > [class*="col"],
+.header-home.scroll-header-top .logo-header-layout {
+  background-color: transparent !important;
+}
+
+.header-home.scroll-header-top .nav-tabs > .nav-item > .nav-link > .d-flex,
+.header-home.scroll-header-top .nav-tabs > .nav-item > .nav-link > .d-flex p,
+.header-home.scroll-header-top .nav-tabs > .nav-item > .nav-link > .d-flex i,
+.header-home.scroll-header-top .header-mobile-menu,
+.header-home.scroll-header-top .header-mobile-menu p,
+.header-home.scroll-header-top .header-mobile-menu i {
+  color: #fff !important;
+}
+
+.header-home.header-over-hero .nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover,
+.header-home.header-over-hero .nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover p,
+.header-home.header-over-hero .nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover i,
+.header-home.header-over-hero .nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow,
+.header-home.header-over-hero .nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow p,
+.header-home.header-over-hero .nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow i,
+.header-home.scroll-header-top .nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover,
+.header-home.scroll-header-top .nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover p,
+.header-home.scroll-header-top .nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover i,
+.header-home.scroll-header-top .nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow,
+.header-home.scroll-header-top .nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow p,
+.header-home.scroll-header-top .nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow i {
+  color: #DEB22F !important;
+}
+
+.header-home.scroll-header-top .lever-2,
+.header-home.scroll-header-top .lever-2 p,
+.header-home.scroll-header-top .lever-2 h5,
+.header-home.scroll-header-top .lever-2 a,
+.header-home.scroll-header-top .lever-2 .text-dark,
+.header-home.scroll-header-top .lever-2 i.fa-angle-right {
+  color: #212529 !important;
+}
+
+.header-home.scroll-header-top .lever-2 .ps-2 > a:hover .hover-yellow,
+.header-home.scroll-header-top .lever-2 .ps-2 > a:hover .hover-yellow p,
+.header-home.scroll-header-top .lever-2 .ps-2 > a:hover .hover-yellow i {
+  color: #DEB22F !important;
 }
 </style>
 
