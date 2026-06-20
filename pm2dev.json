@@ -1,0 +1,13 @@
+{
+  "name": "dev.asihairclinic.com",
+
+  "env": {
+    "PORT":"3363"
+  },
+    "cwd": "/home/ahradmin/loidirieng/asihairclinic.com/asihairclinic.com",
+      "script": "npm run dev",
+  "restart_delay": 500,
+    "error_file": "../logs/asihairclinic.com.error.log",
+  "out_file": "../logs/asihairclinic.com.out.log"
+  
+}

@@ -1,0 +1,436 @@
+.header-home {
+  background-color: #f8f8f8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 12px 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+@media (min-width: 1200px) {
+  .header-home {
+    background-color: rgba(255,255,255,0);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0px;
+    /*box-shadow: none;*/
+  }
+}
+
+.txt-header {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 0 .75rem;
+  /*font-size: 13px;*/
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .text-phone-header {
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.btn-header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 16px 30px;
+}
+
+.banner-1 {
+  min-height: 40vh;
+  /*background: url("https://loidirieng.com/landing/asihairclinic.com/static/1612300244-home-hero.jpg") top / cover no-repeat;*/
+}
+
+@media (min-width: 600px) {
+  .banner-1 {
+    max-height: 110vh;
+    margin-top: -150px;
+  }
+}
+
+.logo-brand {
+  margin: 20px 8px;
+}
+
+@media (min-width: 1200px) {
+  .logo-brand img {
+    width: 60%;
+    margin: 46px 8px;
+  }
+}
+
+.padding-text {
+  padding: 0;
+}
+
+.div-message-section {
+  color: white;
+  border-left: 8px solid white;
+  padding-left: 20px;
+}
+
+@media (min-width: 600px) {
+  .div-message-section {
+    color: white;
+    border-left: 8px solid white;
+    padding-left: 40px;
+    margin-left: 40px;
+  }
+}
+
+.item-img-hover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+@media (min-width: 600px) {
+  .item-img-hover:hover {
+    position: relative;
+    transform: scale(1.5,1.65);
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .item-img-hover:hover p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 600px) {
+  .row .col-12:first-child .item-img-hover:hover {
+    position: relative;
+    width: 100%;
+    transform: scale(1.5,1.65) translateX(25%);
+    z-index: 100;
+    height: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .row .col-12:last-child .item-img-hover:hover {
+    position: relative;
+    width: 100%;
+    transform: scale(1.5,1.65) translateX(-25%);
+    z-index: 100;
+    height: 100%;
+  }
+}
+
+.item-img-hover .overlay-hover {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .item-img-hover .overlay-hover {
+    display: flex !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: 999;
+    color: white;
+    align-items: end;
+    justify-content: center;
+    font-size: 14px;
+    transition: all ease .3s;
+    background-color: rgba(0,0,0,0.6);
+  }
+}
+
+@media (min-width: 600px) {
+  .item-img-hover:hover .overlay-hover {
+    display: flex !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    color: white;
+    align-items: end;
+    justify-content: center;
+    transition: all ease .3s;
+    background-color: rgba(0,0,0,0.7);
+  }
+}
+
+@media (min-width: 600px) {
+  .item-img-hover .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: transform 0.5s ease;
+  }
+}
+
+@media (max-width: 600px) {
+  .item-img-hover .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) {
+  .item-img-hover:hover .overlay {
+    position: absolute;
+    top: 0;
+    z-index: -3;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    /*text-transform: uppercase;*/
+  }
+}
+
+.div-message-section-2 {
+  color: white;
+  font-weight: lighter !important;
+  margin-left: 20px;
+}
+
+@media (min-width: 600px) {
+  .div-message-section-2 {
+    color: white;
+    font-weight: lighter !important;
+    margin-left: 250px;
+  }
+}
+
+@media (min-width: 600px) {
+  .m-bottom {
+    margin-bottom: -10%;
+  }
+}
+
+@media (min-width: 600px) {
+  .m-top {
+    margin-top: -10%;
+  }
+}
+
+@media (min-width: 600px) {
+  .m-btn-section {
+    margin-top: 25vh;
+  }
+}
+
+.btn-section {
+  background-color: black;
+  border: 3px solid white;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+@media (min-width: 600px) {
+  .btn-section {
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 25px 55px;
+  }
+}
+
+.position-section {
+  position: absolute;
+  right: 10%;
+}
+
+@media (min-width: 600px) {
+  .position-section {
+    position: absolute;
+    right: 20%;
+  }
+}
+
+.message-section-9 {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-right: 10%;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .message-section-9 {
+    font-size: 18px;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 10%;
+    justify-content: center;
+  }
+}
+
+.message-section-9 div {
+  border-left: 5px solid black;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.message-section-9 > p {
+  padding-left: 30px;
+}
+
+@media (min-width: 600px) {
+  .m-top-section-11 {
+    margin-top: -45%;
+  }
+}
+
+.border-left-item {
+  border-left: 10px solid black;
+  padding-left: 30px;
+}
+
+.img-hover-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 600px) {
+  .img-hover-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .img-hover-2 .bg-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+    transition: all .3s ease;
+  }
+}
+
+.img-hover-2:hover .bg-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.7);
+  transition: all .3s ease;
+}
+
+.img-hover-2 .overlay-btn {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  z-index: 10;
+  transition: transform 0.5s ease;
+}
+
+.img-hover-2:hover .overlay-btn {
+  position: absolute;
+  left: 10%;
+  z-index: 10;
+  transform: translateY(-200px);
+}
+
+.img-hover-2 .overlay {
+  position: absolute;
+  bottom: 10%;
+  opacity: 1;
+  z-index: 10;
+  padding: 0 10%;
+  transition: opacity 0.5s ease;
+}
+
+@media (min-width: 600px) {
+  .img-hover-2 .overlay {
+    position: absolute;
+    bottom: 15%;
+    opacity: 0;
+    left: 10%;
+    z-index: 10;
+    padding: 0 10% 0 0;
+    transition: opacity 0.5s ease;
+  }
+}
+
+@media (min-width: 600px) {
+  .img-hover-2:hover .overlay {
+    position: absolute;
+    opacity: 1;
+  }
+}
+
+.bg-footer {
+  background-color: black;
+}
+
+p.has-hover {
+  font-size: 13px;
+  line-height: 1rem;
+}
+
+.py-2.has-hover {
+  /*background-color: rgba(0,0,0,0.4);*/
+  /*border-radius: 10px;*/
+  /*padding: 10px;*/
+  /*border-top-left-radius: 0px;*/
+}
+
+/* sdffffsdf */
+
+.pd-2 {
+  padding: 4%;
+}
+
+/* asdfasdf */
+

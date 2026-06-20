@@ -1,0 +1,12 @@
+@import './css/ani.css';
+@import './css/global-custom.css';
+@import './page/about.css';
+@import './page/contact.css';
+@import './page/home.css';
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src:local("Handjet"), url('assets/fonts/Inter/400.ttf') format('truetype');
+}

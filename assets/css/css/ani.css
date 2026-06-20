@@ -1,0 +1,39 @@
+.item-animation {
+  animation: enter-animation 0.8s 1;
+}
+
+@keyframes enter-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.has-content-html img {
+  max-width: 100% !important;
+}
+
+.section-ft-layout {
+  background-position: bottom;
+}
+
+.obj-contain {
+}
+
+.overlay p {
+  text-transform: uppercase;
+}
+

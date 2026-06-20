@@ -1,0 +1,14 @@
+{
+  "name": "cnpland.vn",
+
+  "env": {
+    "NODE_ENV": "production",
+    "PORT":"3366"
+  },
+    "cwd": "/loidirieng/chonnhapho/cnpland.vn/",
+
+      "script": "./.output/server/index.mjs",
+  "restart_delay": 1000,
+  "error_file": "logs/logerr.log",
+  "out_file": "logs/loggg.log"
+}
