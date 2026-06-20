@@ -6,13 +6,6 @@
             <div>
                 <p class="text-center fs-1"><span class="fw-bold">Dr. Do</span>&nbsp;Hair Transplant</p>
             </div>
-            <div class="d-flex">
-                <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center logo-brand"><img class="img-fluid" src="https://loidirieng.com/landing/asihairclinic.com/static/cnn.png"></div>
-                <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center logo-brand"><img class="img-fluid" src="https://loidirieng.com/landing/asihairclinic.com/static/1612390934-global.png"></div>
-                <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center logo-brand"><img class="img-fluid" src="https://loidirieng.com/landing/asihairclinic.com/static/bbc.png"></div>
-                <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center logo-brand"><img class="img-fluid" src="https://loidirieng.com/landing/asihairclinic.com/static/1612390943-etalk.png"></div>
-                <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center logo-brand"><img class="img-fluid" src="https://loidirieng.com/landing/asihairclinic.com/static/cnn.png"></div>
-            </div>
         </div>
     </section>
     <section class="padding-section margin-top-section">

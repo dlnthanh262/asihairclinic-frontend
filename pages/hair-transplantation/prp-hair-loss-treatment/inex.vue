@@ -98,7 +98,7 @@
         <div class="margin-section padding-section"><!-- Start: 1 -->
             <div class="row">
                 <div class="col-12 col-xl-6">
-                    <div class="scale-image"><img class="w-100 h-100 obj-cover object-position-top" src="https://loidirieng.com/landing/asihairclinic.com/static/img2.jpg" style="max-height: 80vh;"></div>
+                    <div class="scale-image"><img class="w-100 h-100 obj-cover object-position-top" src="/static/img2.jpg" style="max-height: 80vh;"></div>
                 </div>
                 <div class="col-12 col-xl-6">
                     <div class="d-xl-flex flex-column justify-content-xl-center align-items-xl-start h-100 bg-black py-4 p-xl-5">

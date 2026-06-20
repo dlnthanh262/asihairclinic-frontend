@@ -75,7 +75,7 @@
             </div><!-- End: 4 -->
         </div>
     </section>
-    <section class="d-flex d-xl-flex align-items-center align-items-xl-center margin-section" style="background: url(&quot;https://loidirieng.com/landing/asihairclinic.com/static/1612300320-home-bg2.jpg&quot;) center / cover no-repeat;min-height: 50vh;">
+    <section class="d-flex d-xl-flex align-items-center align-items-xl-center margin-section" style="background: url(&quot;/static/image/1612300320-home-bg2.jpg&quot;) center / cover no-repeat;min-height: 50vh;">
         <div class="container d-flex d-xl-flex justify-content-center justify-content-xl-center">
             <div class="col-12 col-xl-10 div-message-section">
                 <div>

@@ -195,7 +195,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-xl-6">
-                        <div class="w-100 h-100"><img class="w-100 h-100 obj-cover" src="https://loidirieng.com/landing/asihairclinic.com/static/2.jpg"></div>
+                        <div class="w-100 h-100"><img class="w-100 h-100 obj-cover" src="/static/2.jpg"></div>
                     </div>
                 </div>
             </div><!-- End: 2 --><!-- Start: 3 -->

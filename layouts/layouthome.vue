@@ -1,12 +1,18 @@
 <template>
 <div>
-    <header class="header-home bg-transparent" :class="{'scroll-header-top':scrolled}">
-        <div class="row g-0 pe-lg-3 pe-xl-5"><!-- Start: logo -->
+    <header
+        class="header-home"
+        :class="{
+            'scroll-header-top': scrolled,
+            'header-over-hero': !scrolled
+        }"
+    >
+        <div class="row g-0 pe-lg-3 pe-xl-5 header-nav-row align-items-center"><!-- Start: logo -->
             <div class="col-2 col-xl-2 d-none d-lg-none d-xl-block"><nuxt-link class="poiter" to="/">
-                    <div class="d-xl-flex justify-content-xl-center align-items-xl-center bg-black px-5 logo-header-layout" style="display: flex;flex-direction: column;width: 100%;"><b-img class="w-100 obj-contain" style="/*width: 100%;*/" alt="logo asihairclinic" :src="webConfig.logoHeader" lazy></b-img></div>
+                    <div class="d-xl-flex justify-content-xl-center align-items-xl-center px-5 logo-header-layout" style="display: flex;flex-direction: column;width: 100%;"><img class="w-100 obj-contain logo-header-img" alt="logo asihairclinic" :src="webConfig.logoHeader"></div>
                 </nuxt-link></div><!-- End: logo -->
-            <div class="col-8 col-xl-8 d-none d-xl-flex justify-content-xxl-center">
-                <div style="width: 100%;display: flex;">
+            <div class="col-10 col-xl-10 d-none d-xl-flex align-items-center">
+                <div style="width: 100%; display: flex; align-items: center;">
                     <div class="d-flex justify-content-xl-center align-items-xl-center" style="flex: 1;">
                         <ul class="nav nav-tabs disable-border-nav">
                             <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none visible-header-home" to="/" :class="{'text-dark':scrolled}">
@@ -133,22 +139,20 @@
                                 </nuxt-link></li>
                         </ul>
                     </div>
-                </div>
-            </div><!-- Start: contact -->
-            <div class="col-2 col-xl-2 d-flex d-lg-none d-xl-block align-items-center" v-if="$device.isDesktop">
-                <div class="d-flex justify-content-center align-items-center flex-xl-column px-sm-3 px-xl-0 h-100"><nuxt-link to="/contact/virtual-consultation/">
-                        <div class="btn-black btn-hover font-size-reponsive-header" style="border-radius:0px !important; letter-spacing: .6px; padding: .5rem .75rem !important" @click="div52578ebc4e1f4b316401b4c33393e7642ba3b3ccclick">
-                            <p class="fw-lighter">Virtual Consultation</p>
-                        </div>
-                    </nuxt-link><a class="px-lg-2 px-xl-0 text-decoration-none pt-2" :href="'tel:'+webConfig.phoneNumber">
-                        <p class="text-center text-phone-header txt-header font-size-reponsive-header" :class="{'text-dark':scrolled}">{{webConfig.phoneNumber}}</p>
-                    </a></div>
-            </div><!-- End: contact -->
-            <div class="col d-flex d-xl-none justify-content-between align-items-center" v-if="$device.isMobile"><a class="px-lg-2 px-xl-0 text-decoration-none" :href="'tel:'+webConfig.phoneNumber">
-                    <div class="poiter px-3 px-lg-0">
-                        <p class="text-center text-phone-header text-dark">{{webConfig.phoneNumber}}</p>
+                    <div style="display:flex;align-items:center;justify-content:flex-end;gap:0.35rem;flex-shrink:0;font-style:italic;font-size:0.8125rem;padding-left:1rem;white-space:nowrap;">
+                        <i class="fa fa-comment-o" aria-hidden="true" style="font-size:0.875rem;font-style:normal;" :style="{ color: scrolled ? '#212529' : '#ffffff' }"></i>
+                        <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;" :style="{ color: scrolled ? '#212529' : '#ffffff' }">English</a>
+                        <span style="font-style:normal;" :style="{ color: scrolled ? 'rgba(33,37,41,0.55)' : 'rgba(255,255,255,0.75)' }">|</span>
+                        <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;" :style="{ color: scrolled ? '#212529' : '#ffffff' }">Spanish</a>
                     </div>
-                </a>
+                </div>
+            </div>
+            <div class="col d-flex d-xl-none justify-content-between align-items-center px-3">
+                <div style="display:flex;align-items:center;gap:0.35rem;font-style:italic;font-size:0.8125rem;">
+                    <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;" :style="{ color: scrolled ? '#212529' : '#ffffff' }">English</a>
+                    <span style="font-style:normal;" :style="{ color: scrolled ? 'rgba(33,37,41,0.55)' : 'rgba(255,255,255,0.75)' }">|</span>
+                    <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;" :style="{ color: scrolled ? '#212529' : '#ffffff' }">Spanish</a>
+                </div>
                 <div class="d-flex justify-content-end align-items-center h-100 pe-3" @click="isshowoffcanvas=!isshowoffcanvas">
                     <p>MENU</p><i class="fa fa-align-justify fs-5 ms-2 fw-light"></i>
                 </div>
@@ -269,9 +273,10 @@
         <div class="p-3 p-xl-5">
             <div class="d-flex flex-column justify-content-between flex-xl-row align-items-xl-center px-xl-5">
                 <div class="d-flex flex-column flex-xl-row justify-content-xl-center align-items-xl-center">
-                    <p class="text-center fw-bold mt-3 mt-xl-0">{{webConfig.nameStore}}</p><nuxt-link class="ms-3 text-decoration-none text-dark btn-hover-2" :to="webConfig.linkCopyright">
+                    <p class="text-center fw-bold mt-3 mt-xl-0">{{webConfig.nameStore}}</p><a v-if="linkCopyright" class="ms-3 text-decoration-none text-dark btn-hover-2" :href="linkCopyright" target="_blank" rel="noopener">
                         <p class="text-center py-3">{{webConfig.copyright}}</p>
-                    </nuxt-link>
+                    </a>
+                    <p v-else class="text-center py-3 ms-3">{{webConfig.copyright}}</p>
                 </div><nuxt-link class="text-decoration-none text-dark" to="/">
                     <p class="text-center py-3 d-none">PRIVACY POLICY</p>
                 </nuxt-link>
@@ -507,16 +512,8 @@
         //1 setup
         
 
-        let webConfig= ref({});
-
-        
-let variablewebConfig={};
-
-const resultwebConfig = await useAsyncQuery(gql` query {  webConfig {
-                _id createdAt updatedAt logoHeader address phoneNumber email linkFb description ceoTitle ceoDescription copyright linkGoogleMap nameStore linkYoutube linkTwitter linkInstagram linkCopyright backroundFooter 
-        } }`,variablewebConfig);
-if(resultwebConfig.data.value&&resultwebConfig.data.value?.webConfig){
-webConfig.value = {...resultwebConfig.data.value?.webConfig}}
+        let webConfig = await useWebConfig();
+        const linkCopyright = useLinkCopyright(webConfig);
 
 
 
@@ -539,10 +536,8 @@ webConfig.value = {...resultwebConfig.data.value?.webConfig}}
         
         const handelscroll=()=>{
             if (process.client) {
-    const debouncedScrollHandler = debounce(() => {
-        const rect = document.body.getBoundingClientRect();
-        scrolled.value = rect.top !== 0;
-        //console.log(rect.top);
+        const debouncedScrollHandler = debounce(() => {
+        scrolled.value = window.scrollY > 10;
     }, 100); // Thời gian chờ trước khi gọi lại hàm (milliseconds)
 
     window.addEventListener("scroll", debouncedScrollHandler);
@@ -568,6 +563,9 @@ function debounce(func, wait) {
 
           onMounted(()=>{
             handelscroll()
+            if (process.client) {
+                scrolled.value = window.scrollY > 10;
+            }
         })
 
 
@@ -621,5 +619,28 @@ function debounce(func, wait) {
 
         }
 </script>
+
+<style>
+.header-home.header-over-hero {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.header-home.header-over-hero .header-nav-row,
+.header-home.header-over-hero .header-nav-row > [class*="col"],
+.header-home.header-over-hero .logo-header-layout {
+  background-color: transparent !important;
+}
+
+.header-home.header-over-hero .nav-tabs,
+.header-home.header-over-hero .nav-link,
+.header-home.header-over-hero .nav-link.active,
+.header-home.header-over-hero .nav-link:hover,
+.header-home.header-over-hero .nav-link:focus {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+</style>
 
 //update in Fri Oct 18 2024 16:40:30 GMT+0700 (Indochina Time) by loidirieng

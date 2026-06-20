@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="col">
-                <div><img class="w-100 h-100 obj-cover" src="https://loidirieng.com/landing/asihairclinic.com/static/8.jpg"></div>
+                <div><img class="w-100 h-100 obj-cover" src="/static/8.jpg"></div>
             </div>
         </div>
     </section>
@@ -57,13 +57,13 @@
                             <p class="py-2">Dr. Jamil Asaria guides viewers through a detailed consultation, emphasizing personalized approaches.&nbsp;</p>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-6"><img class="img-fluid py-4 py-xl-0" src="https://loidirieng.com/landing/asihairclinic.com/static/thumnbnail.png"></div>
+                    <div class="col-12 col-xl-6"><img class="img-fluid py-4 py-xl-0" src="/static/thumnbnail.png"></div>
                 </div>
             </div><!-- End: 2 --><!-- Start: 3 -->
             <div class="margin-section padding-section"><!-- Start: 1 -->
                 <div class="row">
                     <div class="col">
-                        <div class="scale-image"><img class="w-100 h-100" src="https://loidirieng.com/landing/asihairclinic.com/static/9.jpg"></div>
+                        <div class="scale-image"><img class="w-100 h-100" src="/static/9.jpg"></div>
                     </div>
                     <div class="col d-none d-xl-block">
                         <div class="d-xl-flex flex-column justify-content-xl-center align-items-xl-start h-100 p-5" style="background: #000000;">
@@ -92,7 +92,7 @@
             </div><!-- End: 4 -->
         </div>
     </section>
-    <section class="d-xl-flex align-items-xl-center margin-section" style="background: url(&quot;https://loidirieng.com/landing/asihairclinic.com/static/1612485752-gallery.jpg&quot;) top / cover no-repeat;min-height: 60vh;">
+    <section class="d-xl-flex align-items-xl-center margin-section" style="background: url(&quot;/static/image/1612485752-gallery.jpg&quot;) top / cover no-repeat;min-height: 60vh;">
         <div class="d-none d-xl-block position-section">
             <div class="h-100 mb-5">
                 <h1>GALLERY</h1>

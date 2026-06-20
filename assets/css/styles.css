@@ -1,12 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import './css/typography.css';
 @import './css/ani.css';
 @import './css/global-custom.css';
 @import './page/about.css';
 @import './page/contact.css';
 @import './page/home.css';
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src:local("Handjet"), url('assets/fonts/Inter/400.ttf') format('truetype');
-}

@@ -1,0 +1,134 @@
+:root {
+  --ahr-accent: #DEB22F;
+  --ahr-accent-hover: #c99f28;
+  --ahr-body: #606060;
+  --ahr-dark: #252525;
+  --ahr-white: #ffffff;
+  --ahr-radius-btn: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--ahr-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+p,
+li,
+label,
+input,
+textarea,
+select,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.bg-black,
+.bg-footer,
+section.bg-black {
+  background-color: var(--ahr-dark) !important;
+  color: var(--ahr-white);
+}
+
+[style*="#000000"] {
+  background-color: var(--ahr-dark) !important;
+}
+
+[style*="background: black;"] {
+  background-color: var(--ahr-dark) !important;
+}
+
+.btn-black,
+.btn-section,
+.btn-header {
+  background-color: var(--ahr-accent) !important;
+  color: var(--ahr-white) !important;
+  border: none !important;
+  border-radius: var(--ahr-radius-btn) !important;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.btn-black:hover,
+.btn-section:hover,
+.btn-header:hover,
+.btn-black.btn-hover:hover,
+.btn-section.btn-hover:hover {
+  background-color: var(--ahr-accent-hover) !important;
+  color: var(--ahr-white) !important;
+}
+
+.text-color-main,
+.hover-yellow:hover {
+  color: var(--ahr-accent) !important;
+}
+
+.bg-black .text-white,
+.bg-footer .text-white,
+section.bg-black .text-white,
+.text-white.bg-black {
+  color: var(--ahr-white) !important;
+}
+
+.container-position {
+  background-color: var(--ahr-dark);
+}
+
+.footer-destop-left,
+.footer-destop-right {
+  background-color: var(--ahr-dark) !important;
+}
+
+.select-category {
+  background-color: var(--ahr-dark) !important;
+}
+
+.border-left-item,
+.message-section-9 div {
+  border-left-color: var(--ahr-dark);
+}
+
+.accordion-button,
+.nav-link,
+.btn {
+  font-family: 'Poppins', sans-serif;
+}
+
+.line-bottom-btn {
+  width: 60px;
+  height: 2px;
+  background: var(--ahr-accent);
+}
+
+.bg-black p,
+.bg-black li,
+section.bg-black p,
+.bg-footer p {
+  color: inherit;
+}

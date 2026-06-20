@@ -1,15 +1,14 @@
 <template>
 <div>
     <header class="header-home bg-transparent" :class="{'scroll-header-top':scrolled}">
-        <div class="row g-0 pe-lg-3 pe-xl-5"><!-- Start: logo -->
+        <div class="row g-0 pe-lg-3 pe-xl-5 header-nav-row align-items-center"><!-- Start: logo -->
             <div class="col-2 col-xl-2 d-none d-lg-none d-xl-block"><nuxt-link class="poiter" to="/">
-                    <div class="d-xl-flex justify-content-xl-center align-items-xl-center bg-black px-5 logo-header-layout"><b-img class="w-100 h-100 obj-contain" alt="logo asihairclinic" :src="webConfig.logoHeader" lazy></b-img>
-                        <h1></h1>
-                    </div>
+                    <div class="d-xl-flex justify-content-xl-center align-items-xl-center px-5 logo-header-layout"><img class="w-100 h-100 obj-contain logo-header-img" alt="logo asihairclinic" :src="webConfig.logoHeader"></div>
                 </nuxt-link></div><!-- End: logo -->
-            <div class="col-10 col-xl-8 d-none d-xl-flex justify-content-xxl-center">
-                <div class="d-flex justify-content-xl-center align-items-xl-center" style="display: flex;width: 100%;">
-                    <ul class="nav nav-tabs disable-border-nav">
+            <div class="col-10 col-xl-10 d-none d-xl-flex align-items-center">
+                <div style="width: 100%; display: flex; align-items: center;">
+                    <div class="d-flex justify-content-xl-center align-items-xl-center" style="flex: 1;">
+                        <ul class="nav nav-tabs disable-border-nav">
                         <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none text-dark visible-header-home" to="/" :class="{'text-dark':scrolled}">
                                 <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
                                     <p class="text-uppercase fw-bold">HOME</p>
@@ -133,22 +132,21 @@
                                 </div>
                             </nuxt-link></li>
                     </ul>
-                </div>
-            </div><!-- Start: contact -->
-            <div class="col-2 col-xl-2 d-none d-lg-none d-xl-block" v-if="$device.isDesktop">
-                <div class="d-flex justify-content-center align-items-center flex-xl-column px-sm-3 px-xl-0 h-100"><nuxt-link to="/contact/virtual-consultation/">
-                        <div class="btn-black btn-hover font-size-reponsive-header" style="border-radius:0px !important; letter-spacing: .6px; padding: .5rem .75rem !important" @click="div52578ebc4e1f4b316401b4c33393e7642ba3b3ccclick">
-                            <p class="fw-lighter">Virtual Consultation</p>
-                        </div>
-                    </nuxt-link><a class="px-lg-2 px-xl-0 text-decoration-none pt-2" :class="{'text-dark':scrolled}" :href="'tel:'+webConfig.phoneNumber">
-                        <p class="text-center text-phone-header txt-header text-dark font-size-reponsive-header">{{webConfig.phoneNumber}}</p>
-                    </a></div>
-            </div><!-- End: contact -->
-            <div class="col d-flex d-xl-none justify-content-between align-items-center" v-if="$device.isMobile"><a class="px-lg-2 px-xl-0 text-decoration-none" :href="'tel:'+webConfig.phoneNumber">
-                    <div class="poiter px-3 px-lg-0">
-                        <p class="text-center text-phone-header text-dark">{{webConfig.phoneNumber}}</p>
                     </div>
-                </a>
+                    <div style="display:flex;align-items:center;justify-content:flex-end;gap:0.35rem;flex-shrink:0;font-style:italic;font-size:0.8125rem;padding-left:1rem;white-space:nowrap;color:#212529;">
+                        <i class="fa fa-comment-o" aria-hidden="true" style="font-size:0.875rem;font-style:normal;"></i>
+                        <a href="#" style="color:#212529;text-decoration:none;font-style:italic;font-weight:500;">English</a>
+                        <span style="color:rgba(33,37,41,0.55);font-style:normal;">|</span>
+                        <a href="#" style="color:#212529;text-decoration:none;font-style:italic;font-weight:500;">Spanish</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex d-xl-none justify-content-between align-items-center px-3">
+                <div style="display:flex;align-items:center;gap:0.35rem;font-style:italic;font-size:0.8125rem;">
+                    <a href="#" style="color:#212529;text-decoration:none;font-style:italic;font-weight:500;">English</a>
+                    <span style="color:rgba(33,37,41,0.55);font-style:normal;">|</span>
+                    <a href="#" style="color:#212529;text-decoration:none;font-style:italic;font-weight:500;">Spanish</a>
+                </div>
                 <div class="d-flex justify-content-end align-items-center h-100 pe-3" @click="isshowoffcanvas=!isshowoffcanvas">
                     <p>MENU</p><i class="fa fa-align-justify fs-5 ms-2"></i>
                 </div>
@@ -269,9 +267,10 @@
         <div class="p-3 p-xl-5">
             <div class="d-flex flex-column justify-content-between flex-xl-row align-items-xl-center px-xl-5">
                 <div class="d-flex flex-column flex-xl-row justify-content-xl-center align-items-xl-center">
-                    <p class="text-center fw-bold mt-3 mt-xl-0">{{webConfig.nameStore}}</p><nuxt-link class="ms-3 text-decoration-none btn-hover-2 text-dark" :to="webConfig.linkCopyright">
+                    <p class="text-center fw-bold mt-3 mt-xl-0">{{webConfig.nameStore}}</p><a v-if="linkCopyright" class="ms-3 text-decoration-none btn-hover-2 text-dark" :href="linkCopyright" target="_blank" rel="noopener">
                         <p class="text-center py-3">{{webConfig.copyright}}</p>
-                    </nuxt-link>
+                    </a>
+                    <p v-else class="text-center py-3 ms-3">{{webConfig.copyright}}</p>
                 </div><nuxt-link class="text-decoration-none text-dark" to="/">
                     <p class="text-center py-3 d-none">PRIVACY POLICY</p>
                 </nuxt-link>
@@ -509,16 +508,8 @@
         //1 setup
         
 
-        let webConfig= ref({});
-
-        
-let variablewebConfig={};
-
-const resultwebConfig = await useAsyncQuery(gql` query {  webConfig {
-                _id createdAt updatedAt logoHeader address phoneNumber email linkFb description ceoTitle ceoDescription copyright linkGoogleMap nameStore linkYoutube linkTwitter linkInstagram linkCopyright backroundFooter 
-        } }`,variablewebConfig);
-if(resultwebConfig.data.value&&resultwebConfig.data.value?.webConfig){
-webConfig.value = {...resultwebConfig.data.value?.webConfig}}
+        let webConfig = await useWebConfig();
+        const linkCopyright = useLinkCopyright(webConfig);
 
 
 
