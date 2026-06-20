@@ -1,5 +1,22 @@
-{"short_name":"cnpland.vn","name":"Chọn nhà phố",
-  "start_url":"https://cnpland.vn/",
-  "icons":[{"src":"static/icon/icon-512x512.png","type":"image/png","sizes":"512x512","purpose":"any maskable"},{"src":"static/icon/icon-192x192.png","type":"image/png","sizes":"192x192","purpose":"any maskable"}],
-
-  "background_color":"#8e3030","theme_color":"#ff0000","display":"standalone"}
+{
+  "short_name": "asihairclinic.com",
+  "name": "ASI Hair Clinic",
+  "start_url": "https://asihairclinic.com/",
+  "icons": [
+    {
+      "src": "static/icon/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "static/icon/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ],
+  "background_color": "#8e3030",
+  "theme_color": "#ff0000",
+  "display": "standalone"
+}
