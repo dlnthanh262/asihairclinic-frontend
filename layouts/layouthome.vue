@@ -8,153 +8,31 @@
         }"
     >
         <div class="row g-0 pe-lg-3 pe-xl-5 header-nav-row align-items-center"><!-- Start: logo -->
-            <div class="col-2 col-xl-2 d-none d-lg-none d-xl-block"><nuxt-link class="poiter" to="/">
+            <div class="col-2 col-xl-2 d-none d-lg-none d-xl-block"><nuxt-link class="poiter" :to="localizedTo('/')">
                     <div class="d-xl-flex justify-content-xl-center align-items-xl-center px-5 logo-header-layout" style="display: flex;flex-direction: column;width: 100%;"><img class="w-100 obj-contain logo-header-img" alt="logo asihairclinic" :src="webConfig.logoHeader"></div>
                 </nuxt-link></div><!-- End: logo -->
             <div class="col-10 col-xl-10 d-none d-xl-flex align-items-center">
                 <div style="width: 100%; display: flex; align-items: center;">
                     <div class="d-flex justify-content-xl-center align-items-xl-center" style="flex: 1;">
-                        <ul class="nav nav-tabs disable-border-nav">
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none visible-header-home" to="/">
-                                    <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
-                                        <p class="text-uppercase">HOME</p>
-                                    </div>
-                                </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/about/">
-                                    <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
-                                        <p class="text-uppercase">ABOUT</p>
-                                    </div>
-                                </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link nav-header-hover txt-header poiter text-decoration-none" to="/hair-transplantation/">
-                                    <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
-                                        <p class="text-uppercase">Hair Transplantation</p><i class="fa fa-caret-down ms-2"></i>
-                                    </div>
-                                    <div class="lever-2 bg-transparent px-1 font-size-reponsive-header" style="opacity: 0;display: none;">
-                                        <div class="row g-0">
-                                            <div class="col">
-                                                <div class="bg-white h-100 p-4 text-dark">
-                                                    <h5 class="text-uppercase">hair transplant method:</h5>
-                                                    <div class="ps-2"><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/artas-ix-robotic-hair-restoration">
-                                                            <div class="d-flex flex-row justify-content-start justify-content-xxl-start align-items-xxl-center px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>ARTAS iX Robotic Hair Restoration</p>
-                                                            </div>
-                                                        </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/fue-hair-transplant">
-                                                            <div class="d-flex flex-row justify-content-start justify-content-xl-start align-items-xl-center px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>FUE Hair Transplant</p>
-                                                            </div>
-                                                        </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/fut-hair-transplant">
-                                                            <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>Follicular Unit Hair Transplant (FUT)</p>
-                                                            </div>
-                                                        </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/prp-hair-loss-treatment/">
-                                                            <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>PRP Hair Loss Treatment</p>
-                                                            </div>
-                                                        </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/dhi/">
-                                                            <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>Direct Hair Implantation (DHI)</p>
-                                                            </div>
-                                                        </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/scalp-micropigmentation/">
-                                                            <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>Scalp Micropigmentation</p>
-                                                            </div>
-                                                        </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/hair-restoration-faq/">
-                                                            <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>Hair Restoration FAQ</p>
-                                                            </div>
-                                                        </nuxt-link></div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="bg-white h-100 p-4 text-dark">
-                                                    <h5 class="text-uppercase">hair transplant:</h5>
-                                                    <div class="ps-2"><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/male-hair-transplants/">
-                                                            <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>Male Hair Transplants</p>
-                                                            </div>
-                                                        </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/female-hair-transplants/">
-                                                            <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>Female Hair Transplants</p>
-                                                            </div>
-                                                        </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/facial-hair-transplants/">
-                                                            <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>Facial Hair Transplants</p>
-                                                            </div>
-                                                        </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/hair-transplantation/eyebrow-transplant/">
-                                                            <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                                <p>Eyebrow Transplant</p>
-                                                            </div>
-                                                        </nuxt-link></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link nav-header-hover txt-header poiter text-decoration-none" to="/patient-resources">
-                                    <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
-                                        <p class="d-xl-flex justify-content-xl-start text-uppercase">Patient Resources</p><i class="fa fa-caret-down ms-2"></i>
-                                    </div>
-                                    <div class="lever-2 bg-transparent px-1" style="opacity: 0;display: none;">
-                                        <div class="bg-white h-100 p-4 text-dark font-size-reponsive-header">
-                                            <h5 class="text-uppercase">Patient Resources:</h5>
-                                            <div class="ps-2"><nuxt-link class="btn-hover poiter text-decoration-none" to="/patient-resources/hair-transplant-consultation/">
-                                                    <div class="d-flex flex-row justify-content-start justify-content-xxl-start align-items-xxl-center px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                        <p>Hair Transplant Consultation</p>
-                                                    </div>
-                                                </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/patient-resources/hair-transplant-cost/">
-                                                    <div class="d-flex flex-row justify-content-start justify-content-xl-start align-items-xl-center px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                        <p>Hair Transplant Cost</p>
-                                                    </div>
-                                                </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/patient-resources/stages-of-hair-loss/">
-                                                    <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                        <p>Stages of Hair Loss</p>
-                                                    </div>
-                                                </nuxt-link><nuxt-link class="btn-hover poiter text-decoration-none" to="/patient-resources/financing">
-                                                    <div class="d-flex flex-row justify-content-start px-1 py-2 text-dark hover-yellow"><i class="fa fa-angle-right fs-4 me-2"></i>
-                                                        <p>Financing</p>
-                                                    </div>
-                                                </nuxt-link></div>
-                                        </div>
-                                    </div>
-                                </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/hair-loss-history/">
-                                    <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
-                                        <p class="text-uppercase">Hair Loss History</p>
-                                    </div>
-                                </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/gallery">
-                                    <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
-                                        <p class="text-uppercase">Gallery</p>
-                                    </div>
-                                </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link txt-header poiter text-decoration-none" to="/blogs">
-                                    <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
-                                        <p class="text-uppercase">BLOGS</p>
-                                    </div>
-                                </nuxt-link></li>
-                            <li class="nav-item"><nuxt-link class="nav-link nav-header-hover txt-header poiter text-decoration-none" to="/contact">
-                                    <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center hover-yellow font-size-reponsive-header">
-                                        <p class="text-uppercase">contact</p>
-                                    </div>
-                                </nuxt-link></li>
-                        </ul>
+                        <HeaderNavbar />
                     </div>
-                    <div style="display:flex;align-items:center;justify-content:flex-end;gap:0.35rem;flex-shrink:0;font-style:italic;font-size:0.8125rem;padding-left:1rem;white-space:nowrap;">
-                        <i class="fa fa-comment-o" aria-hidden="true" style="font-size:0.875rem;font-style:normal;color:#ffffff;"></i>
-                        <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;color:#ffffff;">English</a>
-                        <span style="font-style:normal;color:rgba(255,255,255,0.75);">|</span>
-                        <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;color:#ffffff;">Spanish</a>
+                    <div class="lang-switch lang-switch--header lang-switch--light">
+                        <i class="fa fa-globe lang-switch__icon" aria-hidden="true"></i>
+                        <nuxt-link :to="englishLangLink" class="lang-switch__link" :class="{ 'lang-switch__link--active': !isSpanishLang }">English</nuxt-link>
+                        <span class="lang-switch__divider">|</span>
+                        <nuxt-link :to="spanishLangLink" class="lang-switch__link" :class="{ 'lang-switch__link--active': isSpanishLang }">Spanish</nuxt-link>
                     </div>
                 </div>
             </div>
             <div class="col d-flex d-xl-none justify-content-between align-items-center px-3">
-                <div style="display:flex;align-items:center;gap:0.35rem;font-style:italic;font-size:0.8125rem;">
-                    <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;color:#ffffff;">English</a>
-                    <span style="font-style:normal;color:rgba(255,255,255,0.75);">|</span>
-                    <a href="#" style="text-decoration:none;font-style:italic;font-weight:500;color:#ffffff;">Spanish</a>
+                <div class="lang-switch lang-switch--light">
+                    <i class="fa fa-globe lang-switch__icon" aria-hidden="true"></i>
+                    <nuxt-link :to="englishLangLink" class="lang-switch__link" :class="{ 'lang-switch__link--active': !isSpanishLang }">English</nuxt-link>
+                    <span class="lang-switch__divider">|</span>
+                    <nuxt-link :to="spanishLangLink" class="lang-switch__link" :class="{ 'lang-switch__link--active': isSpanishLang }">Spanish</nuxt-link>
                 </div>
                 <div class="d-flex justify-content-end align-items-center h-100 pe-3 header-mobile-menu" @click="isshowoffcanvas=!isshowoffcanvas">
-                    <p>MENU</p><i class="fa fa-align-justify fs-5 ms-2 fw-light"></i>
+                    <p>{{ navContent.menu }}</p><i class="fa fa-align-justify fs-5 ms-2 fw-light"></i>
                 </div>
             </div>
         </div>
@@ -290,106 +168,10 @@
                         </div>
                     </a>
                     <div class="d-flex justify-content-end align-items-center h-100 pe-3" @click="isshowoffcanvas=!isshowoffcanvas">
-                        <p>MENU</p><i class="fa fa-remove fs-2 ms-2"></i>
+                        <p>{{ navContent.menu }}</p><i class="fa fa-remove fs-2 ms-2"></i>
                     </div>
                 </div><!-- End: header --><!-- Start: body -->
-                <div class="py-5 w-100"><a class="poiter text-decoration-none text-dark" href="/">
-                        <div class="px-3 py-3 border rounded">
-                            <p>Home</p>
-                        </div>
-                    </a><a class="poiter text-decoration-none text-dark" href="/about">
-                        <div class="px-3 py-3 border rounded my-2">
-                            <p>About</p>
-                        </div>
-                    </a><!-- Start: Hair Transplantation --><b-accordion class="accordion my-2" role="tablist" id="accordion-6"><b-accordion-item class="accordion-item" title="Hair Transplantation"><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/">
-                                <div class="py-3">
-                                    <p>Over View</p>
-                                </div>
-                            </a><!-- Start: ARTAS iX Robotic Hair Restoration --><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/artas-ix-robotic-hair-restoration">
-                                <div class="py-3">
-                                    <p>ARTAS iX Robotic Hair Restoration</p>
-                                </div>
-                            </a><!-- End: ARTAS iX Robotic Hair Restoration --><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/fue-hair-transplant">
-                                <div class="py-3">
-                                    <p>FUE Hair Transplant</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/fut-hair-transplant">
-                                <div class="py-3">
-                                    <p>FUT Hair Transplant</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/male-hair-transplants/">
-                                <div class="py-3">
-                                    <p>Male Hair Transplants</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/female-hair-transplants/">
-                                <div class="py-3">
-                                    <p>Female Hair Transplants</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/facial-hair-transplants/">
-                                <div class="py-3">
-                                    <p>Facial Hair Transplants</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/eyebrow-transplant/">
-                                <div class="py-3">
-                                    <p>Eyebrow Transplant</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/prp-hair-loss-treatment/">
-                                <div class="py-3">
-                                    <p>PRP Hair Loss Treatment</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/dhi">
-                                <div class="py-3">
-                                    <p>DHI</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/hair-transplantation/hair-restoration-faq/">
-                                <div class="py-3">
-                                    <p>Hair Restoration FAQ</p>
-                                </div>
-                            </a></b-accordion-item></b-accordion><!-- End: Hair Transplantation --><!-- Start: Patient Resources --><b-accordion class="accordion my-2" role="tablist" id="accordion-7"><b-accordion-item class="accordion-item" title="Patient Resources"><a class="poiter text-decoration-none text-dark" href="/patient-resources">
-                                <div class="py-3">
-                                    <p>Over View</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/patient-resources/hair-transplant-consultation/">
-                                <div class="py-3">
-                                    <p>Hair Transplant Consultation</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/patient-resources/hair-transplant-cost/">
-                                <div class="py-3">
-                                    <p>Hair Transplant Cost</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/patient-resources/stages-of-hair-loss/">
-                                <div class="py-3">
-                                    <p>Stages of Hair Loss</p>
-                                </div>
-                            </a><a class="poiter text-decoration-none text-dark" href="/patient-resources/financing">
-                                <div class="py-3">
-                                    <p>Financing</p>
-                                </div>
-                            </a></b-accordion-item></b-accordion><!-- End: Patient Resources --><a class="poiter text-decoration-none text-dark" href="/hair-loss-history/">
-                        <div class="px-3 py-3 border rounded my-2">
-                            <p>Hair Loss History</p>
-                        </div>
-                    </a><a class="poiter text-decoration-none text-dark" href="/gallery">
-                        <div class="px-3 py-3 border rounded my-2">
-                            <p>Gallery</p>
-                        </div>
-                    </a><!-- Start: /videso --><a class="poiter text-decoration-none text-dark" href="/videos">
-                        <div class="px-3 py-3 border rounded my-2">
-                            <p>Videos</p>
-                        </div>
-                    </a><!-- End: /videso --><a class="poiter text-decoration-none text-dark" href="/blogs">
-                        <div class="px-3 py-3 border rounded my-2">
-                            <p>Blogs</p>
-                        </div>
-                    </a><a class="poiter text-decoration-none text-dark" href="/contact">
-                        <div class="px-3 py-3 border rounded my-2">
-                            <p>Contact</p>
-                        </div>
-                    </a><a class="poiter text-decoration-none text-dark" href="/contact/virtual-consultation/">
-                        <div class="px-3 py-3 border rounded my-2">
-                            <p>Virtual Consultation</p>
-                        </div>
-                    </a></div><!-- End: body -->
+                <HeaderMobileMenu />
             </div>
         </b-offcanvas></client-only>
 </div>
@@ -422,6 +204,8 @@
     const $device = useDevice();
     const { isMobile,isDesktop } = useDevice();
     const route = useRoute();
+
+    const { navContent, isSpanishLang, englishLangLink, spanishLangLink, localizedTo } = useLangNav();
 
     
     
@@ -690,6 +474,48 @@ function debounce(func, wait) {
 .header-home.scroll-header-top .lever-2 .ps-2 > a:hover .hover-yellow p,
 .header-home.scroll-header-top .lever-2 .ps-2 > a:hover .hover-yellow i {
   color: #DEB22F !important;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  flex-shrink: 0;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+.lang-switch--header {
+  padding-left: 1rem;
+}
+
+.lang-switch__icon {
+  font-size: 0.875rem;
+  font-style: normal;
+}
+
+.lang-switch__divider {
+  font-style: normal;
+}
+
+.lang-switch--light .lang-switch__icon,
+.lang-switch--light .lang-switch__link {
+  color: #ffffff;
+}
+
+.lang-switch--light .lang-switch__divider {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.lang-switch__link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.lang-switch__link--active {
+  color: #DEB22F !important;
+  font-weight: 700 !important;
 }
 </style>
 
