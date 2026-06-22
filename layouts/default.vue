@@ -1,6 +1,6 @@
 <template>
 <div>
-    <header class="header-home bg-transparent" :class="{'scroll-header-top':scrolled}">
+    <header class="header-home header-fixed-dark">
         <div class="row g-0 pe-lg-3 pe-xl-5 header-nav-row align-items-center"><!-- Start: logo -->
             <div class="col-2 col-xl-2 d-none d-lg-none d-xl-block"><nuxt-link class="poiter" :to="localizedTo('/')">
                     <div class="d-xl-flex justify-content-xl-center align-items-xl-center px-5 logo-header-layout"><img class="w-100 h-100 obj-contain logo-header-img" alt="logo asihairclinic" :src="webConfig.logoHeader"></div>
@@ -8,9 +8,9 @@
             <div class="col-10 col-xl-10 d-none d-xl-flex align-items-center">
                 <div style="width: 100%; display: flex; align-items: center;">
                     <div class="d-flex justify-content-xl-center align-items-xl-center" style="flex: 1;">
-                        <HeaderNavbar bold dark />
+                        <HeaderNavbar />
                     </div>
-                    <div class="lang-switch lang-switch--header lang-switch--dark">
+                    <div class="lang-switch lang-switch--header lang-switch--light">
                         <i class="fa fa-globe lang-switch__icon" aria-hidden="true"></i>
                         <nuxt-link :to="englishLangLink" class="lang-switch__link" :class="{ 'lang-switch__link--active': !isSpanishLang }">English</nuxt-link>
                         <span class="lang-switch__divider">|</span>
@@ -19,13 +19,16 @@
                 </div>
             </div>
             <div class="col d-flex d-xl-none justify-content-between align-items-center px-3">
-                <div class="lang-switch lang-switch--dark">
+                <div class="lang-switch lang-switch--light">
                     <i class="fa fa-globe lang-switch__icon" aria-hidden="true"></i>
                     <nuxt-link :to="englishLangLink" class="lang-switch__link" :class="{ 'lang-switch__link--active': !isSpanishLang }">English</nuxt-link>
                     <span class="lang-switch__divider">|</span>
                     <nuxt-link :to="spanishLangLink" class="lang-switch__link" :class="{ 'lang-switch__link--active': isSpanishLang }">Spanish</nuxt-link>
                 </div>
-                <div class="d-flex justify-content-end align-items-center h-100 pe-3" @click="isshowoffcanvas=!isshowoffcanvas">
+                <div
+                    class="d-flex justify-content-end align-items-center h-100 pe-3 header-mobile-menu"
+                    @click="isshowoffcanvas=!isshowoffcanvas"
+                >
                     <p>{{ navContent.menu }}</p><i class="fa fa-align-justify fs-5 ms-2"></i>
                 </div>
             </div>
@@ -38,11 +41,11 @@
         <div class="d-xl-flex justify-content-xl-end text-white">
             <div class="col-xl-6 d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center p-3 p-xl-5 reponsive-section-2" style="background: rgba(0,0,0,0.7);">
                 <div class="px-xl-5">
-                    <h2 class="py-3 fw-lighter pe-5 fs-2 text-uppercase">Schedule a&nbsp;Consultation</h2>
-                    <p class="py-3">If you are interested in our custom tailored, hand-harvested hair restoration procedures, your next step is a private consultation with Dr. Do. During this process, he will construct an honest plan to deliver maximum relief from hair loss.</p>
-                    <div class="d-flex py-3"><nuxt-link class="text-decoration-none text-white" to="/contact">
+                    <h2 class="py-3 fw-lighter pe-5 fs-2 text-uppercase">{{ footerContent.consultation.heading }}</h2>
+                    <p class="py-3">{{ footerContent.consultation.description }}</p>
+                    <div class="d-flex py-3"><nuxt-link class="text-decoration-none text-white" :to="localizedTo('/contact')">
                             <div class="py-3 btn-hover-2">
-                                <p class="text-uppercase">in-office</p>
+                                <p class="text-uppercase">{{ footerContent.consultation.cta }}</p>
                                 <div class="mt-3" style="width: 60px;height: 3px;background: #ffffff;"></div>
                             </div>
                         </nuxt-link></div>
@@ -53,9 +56,9 @@
     <footer class="shadow-custom pt-2 mb-5 mb-xl-0"><!-- Start: footer-mobile -->
         <div class="footer-mobile shadow">
             <div class="row g-0">
-                <div class="col"><nuxt-link class="text-decoration-none text-dark" to="/contact">
+                <div class="col"><nuxt-link class="text-decoration-none text-dark" :to="localizedTo('/contact')">
                         <div class="text-center text-uppercase py-3 poiter">
-                            <p>Contact us</p>
+                            <p>{{ footerContent.contactUs }}</p>
                         </div>
                     </nuxt-link></div>
                 <div class="col"><a class="text-decoration-none text-dark" :href="'tel:'+webConfig.phoneNumber">
@@ -67,42 +70,42 @@
         </div><!-- End: footer-mobile --><!-- Start: footer-destop -->
         <div><!-- Start: left -->
             <div class="d-none footer-destop-left poiter btn-hover"><i class="fa fa-wheelchair text-white fs-4 m-3"></i></div><!-- End: left --><!-- Start: right -->
-            <div class="footer-destop-right poiter btn-hover"><nuxt-link class="text-decoration-none" to="/contact">
-                    <p class="text-white">CONTACT US</p>
+            <div class="footer-destop-right poiter btn-hover"><nuxt-link class="text-decoration-none" :to="localizedTo('/contact')">
+                    <p class="text-white">{{ footerContent.contactUsUpper }}</p>
                 </nuxt-link></div><!-- End: right -->
         </div><!-- End: footer-destop --><!-- Start: 1 -->
         <div class="d-none d-xl-block margin-section">
-            <div class="d-flex flex-wrap justify-content-xl-center align-items-xl-center"><nuxt-link class="txt-header poiter text-dark" to="/about/">
+            <div class="d-flex flex-wrap justify-content-xl-center align-items-xl-center"><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/about/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">ABOUT</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.about }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/hair-transplantation/">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/hair-transplantation/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Hair Transplantation</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.hairTransplantation }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/patient-resources/">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/patient-resources/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Patient Resources</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.patientResources }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/hair-loss-history/">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/hair-loss-history/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Hair Loss History</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.hairLossHistory }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/gallery/">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/gallery/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Gallery</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.gallery }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/videos">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/videos')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">VIDEOS</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.videos }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/blogs">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/blogs')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Blogs</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.blogs }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/contact">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/contact')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">contact</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.contact }}</p>
                     </div>
                 </nuxt-link></div>
         </div><!-- End: 1 --><!-- Start: 2 -->
@@ -125,16 +128,16 @@
                         <div>
                             <div class="d-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><nuxt-link class="text-white poiter" :to="webConfig.linkFb"><i class="fa fa-facebook-f mx-2 fs-5"></i></nuxt-link><nuxt-link class="text-white poiter" :to="webConfig.linkYoutube"><i class="fa fa-youtube-play mx-2 fs-5"></i></nuxt-link><nuxt-link class="text-white poiter" :to="webConfig.linkInstagram"><i class="fa fa-instagram mx-2 fs-5"></i></nuxt-link><nuxt-link class="text-white poiter" :to="webConfig.linkTwitter"><i class="fa fa-twitter mx-2 fs-5"></i></nuxt-link></div>
                             <div class="d-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><nuxt-link class="d-xl-flex justify-content-xl-center align-items-xl-center text-white text-decoration-none" :to="webConfig.linkGoogleMap">
-                                    <p>4.3 Stars 56 Reviews</p>
+                                    <p>{{ footerContent.starsReviews }}</p>
                                     <div><i class="fa fa-star mx-2 fs-5"></i><i class="fa fa-star mx-2 fs-5"></i><i class="fa fa-star mx-2 fs-5"></i><i class="fa fa-star mx-2 fs-5"></i></div>
                                 </nuxt-link></div>
                             <div class="d-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><a class="d-flex d-xl-flex d-xxl-flex justify-content-center justify-content-xl-center justify-content-xxl-center text-white text-decoration-none btn-hover" :href="'tel:'+webConfig.phoneNumber">
                                     <p class="d-none">PHONE:&nbsp;</p>
                                     <p>{{webConfig.phoneNumber}}</p>
                                 </a></div><!-- Start: btn email -->
-                            <div class="d-flex d-xxl-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><nuxt-link class="poiter text-decoration-none" to="/contact">
+                            <div class="d-flex d-xxl-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><nuxt-link class="poiter text-decoration-none" :to="localizedTo('/contact')">
                                     <div class="d-inline-block bg-white text-dark text-uppercase p-2">
-                                        <p>email us</p>
+                                        <p>{{ footerContent.emailUs }}</p>
                                     </div>
                                 </nuxt-link></div><!-- End: btn email -->
                         </div>
@@ -201,7 +204,7 @@
     const { isMobile,isDesktop } = useDevice();
     const route = useRoute();
 
-    const { navContent, isSpanishLang, englishLangLink, spanishLangLink, localizedTo } = useLangNav();
+    const { navContent, footerContent, isSpanishLang, englishLangLink, spanishLangLink, localizedTo } = useLangNav();
 
     
     
@@ -451,6 +454,61 @@ function debounce(func, wait) {
 .lang-switch__link--active {
   color: #DEB22F !important;
   font-weight: 700 !important;
+}
+</style>
+
+<style>
+.header-home.header-fixed-dark {
+  background-color: #252525 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.header-home.header-fixed-dark .header-nav-row,
+.header-home.header-fixed-dark .header-nav-row > [class*="col"],
+.header-home.header-fixed-dark .logo-header-layout {
+  background-color: transparent !important;
+}
+
+.header-home.header-fixed-dark .nav-tabs > .nav-item > .nav-link > .d-flex,
+.header-home.header-fixed-dark .nav-tabs > .nav-item > .nav-link > .d-flex p,
+.header-home.header-fixed-dark .nav-tabs > .nav-item > .nav-link > .d-flex i,
+.header-home.header-fixed-dark .header-mobile-menu,
+.header-home.header-fixed-dark .header-mobile-menu p,
+.header-home.header-fixed-dark .header-mobile-menu i {
+  color: #fff !important;
+}
+
+.header-home.header-fixed-dark .nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover,
+.header-home.header-fixed-dark .nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover p,
+.header-home.header-fixed-dark .nav-tabs > .nav-item > .nav-link > .d-flex.hover-yellow:hover i,
+.header-home.header-fixed-dark .nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow,
+.header-home.header-fixed-dark .nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow p,
+.header-home.header-fixed-dark .nav-tabs > .nav-item > .nav-link.nav-header-hover:hover > .d-flex.hover-yellow i {
+  color: #DEB22F !important;
+}
+
+.header-home.header-fixed-dark .lever-2,
+.header-home.header-fixed-dark .lever-2 p,
+.header-home.header-fixed-dark .lever-2 h5,
+.header-home.header-fixed-dark .lever-2 a,
+.header-home.header-fixed-dark .lever-2 .text-dark,
+.header-home.header-fixed-dark .lever-2 i.fa-angle-right {
+  color: #212529 !important;
+}
+
+.header-home.header-fixed-dark .lever-2 .ps-2 > a:hover .hover-yellow,
+.header-home.header-fixed-dark .lever-2 .ps-2 > a:hover .hover-yellow p,
+.header-home.header-fixed-dark .lever-2 .ps-2 > a:hover .hover-yellow i {
+  color: #DEB22F !important;
+}
+
+.lang-switch--light .lang-switch__icon,
+.lang-switch--light .lang-switch__link {
+  color: #ffffff;
+}
+
+.lang-switch--light .lang-switch__divider {
+  color: rgba(255, 255, 255, 0.75);
 }
 </style>
 

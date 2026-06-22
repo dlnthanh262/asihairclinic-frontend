@@ -9,7 +9,7 @@
                         <h1 class="fw-lighter text-white text-title-mobile p-2">PREMIER HOUSTON COSMETIC SURGEON</h1>
                     </div><!-- End: div heading 2 -->
                     <div class="d-flex align-items-center"><img class="img-fluid mx-2" src="/static/image/2.png" style="max-height: 80px; border-radius: 4px;" alt="logo brown">
-                        <p class="fw-lighter text-white text-section-1 p-2 ms-2">Dr. Do is a Brown University School of Medicine PLME Graduate and is a Double Board Certified Surgeon</p>
+                        <p class="fw-lighter text-white text-section-1 p-2 ms-2">Dr. Do is a Brown University School of Medicine PLME graduate and double board-certified surgeon with more than 20 years of experience and over 20,000 procedures performed.</p>
                     </div>
                 </div>
             </div>
@@ -31,8 +31,8 @@
             <div class="d-xl-flex d-xxl-flex justify-content-xl-center align-items-xl-center justify-content-xxl-center margin-section py-4 px-2 px-xl-0 py-xl-5 shadow-custom">
                 <div class="col-xl-6">
                     <h1 class="text-center fw-lighter pb-xl-3 text-color-main"><span class="fw-normal">DR. DO'S</span>&nbsp;EDUCATION</h1>
-                    <p class="text-center my-2 mx-1 my-xl-3">Dr. Do graduated from the prestigious&nbsp;Brown University School of Medicine, as part of the&nbsp;Program in Liberal Medical Education (PLME).&nbsp;This highly selective, combined MD/BA program accepts only 60 high school students annually across the country – the only one of its kind among Ivy League institutions. After graduation from Brown, Dr. Do completed his surgery residency at Boston Medical Center and St. Joseph Medical Center (now part of the Methodist Surgery Residency Program in Houston).</p>
-                    <p class="text-center my-2 mx-1 my-xl-3">To hone his aesthetic surgical skills and knowledge, Dr. Do travels nationally and internationally to participate in numerous symposiums, workshops, and fellowships dedicated to aesthetic surgery – led by surgery leaders such as Dr. Timothy Martin and Dr. Dean Toriumi.</p>
+                    <p class="text-center my-2 mx-1 my-xl-3">Dr. Do graduated from the prestigious Brown University School of Medicine through the highly selective Program in Liberal Medical Education (PLME), the only combined BA/MD program among Ivy League institutions. Following medical school, he completed surgical training at Boston Medical Center and St. Joseph Medical Center, now part of the Methodist Surgery Residency Program in Houston.</p>
+                    <p class="text-center my-2 mx-1 my-xl-3">Committed to continuous education and innovation, Dr. Do regularly participates in advanced symposiums, workshops, and surgical training programs throughout the United States and internationally. He has trained alongside respected leaders in aesthetic and reconstructive surgery, including Dr. Timothy Martin and Dr. Dean Toriumi, helping ensure patients benefit from the latest advancements in surgical techniques and patient care.</p>
                 </div>
             </div><!-- End: 1 -->
         </div>

@@ -44,11 +44,11 @@
         <div class="d-xl-flex justify-content-xl-end text-white">
             <div class="col-xl-6 d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center p-3 p-xl-5 reponsive-section-2" style="background: rgba(0,0,0,0.7);">
                 <div class="px-xl-5">
-                    <h2 class="py-3 fw-lighter pe-5 fs-2 text-uppercase">Schedule a&nbsp;Consultation</h2>
-                    <p class="py-3">If you are interested in our custom tailored, hand-harvested hair restoration procedures, your next step is a private consultation with Dr. Do. During this process, he will construct an honest plan to deliver maximum relief from hair loss.</p>
-                    <div class="d-flex py-3"><nuxt-link class="text-decoration-none text-white" to="/contact">
+                    <h2 class="py-3 fw-lighter pe-5 fs-2 text-uppercase">{{ footerContent.consultation.heading }}</h2>
+                    <p class="py-3">{{ footerContent.consultation.description }}</p>
+                    <div class="d-flex py-3"><nuxt-link class="text-decoration-none text-white" :to="localizedTo('/contact')">
                             <div class="py-3 btn-hover-2">
-                                <p class="text-uppercase">in-office</p>
+                                <p class="text-uppercase">{{ footerContent.consultation.cta }}</p>
                                 <div class="mt-3" style="width: 60px;height: 3px;background: #ffffff;"></div>
                             </div>
                         </nuxt-link></div>
@@ -59,9 +59,9 @@
     <footer class="shadow-custom pt-2 mb-5 mb-xl-0"><!-- Start: footer-mobile -->
         <div class="footer-mobile shadow">
             <div class="row g-0">
-                <div class="col"><nuxt-link class="text-decoration-none text-dark" to="/contact">
+                <div class="col"><nuxt-link class="text-decoration-none text-dark" :to="localizedTo('/contact')">
                         <div class="text-center text-uppercase py-3 poiter">
-                            <p>Contact us</p>
+                            <p>{{ footerContent.contactUs }}</p>
                         </div>
                     </nuxt-link></div>
                 <div class="col"><a class="text-decoration-none text-dark" :href="'tel:'+webConfig.phoneNumber">
@@ -73,42 +73,42 @@
         </div><!-- End: footer-mobile --><!-- Start: footer-destop -->
         <div><!-- Start: left -->
             <div class="d-none footer-destop-left poiter btn-hover"><i class="fa fa-wheelchair text-white fs-4 m-3"></i></div><!-- End: left --><!-- Start: right -->
-            <div class="footer-destop-right poiter btn-hover"><nuxt-link class="text-decoration-none" to="/contact">
-                    <p class="text-white">CONTACT US</p>
+            <div class="footer-destop-right poiter btn-hover"><nuxt-link class="text-decoration-none" :to="localizedTo('/contact')">
+                    <p class="text-white">{{ footerContent.contactUsUpper }}</p>
                 </nuxt-link></div><!-- End: right -->
         </div><!-- End: footer-destop --><!-- Start: 1 -->
         <div class="d-none d-xl-block margin-section">
-            <div class="d-flex flex-wrap justify-content-xl-center align-items-xl-center font-size-reponsive-header"><nuxt-link class="txt-header poiter text-dark" to="/about/">
+            <div class="d-flex flex-wrap justify-content-xl-center align-items-xl-center font-size-reponsive-header"><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/about/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">ABOUT</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.about }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/hair-transplantation/">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/hair-transplantation/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Hair Transplantation</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.hairTransplantation }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/patient-resources/">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/patient-resources/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Patient Resources</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.patientResources }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/hair-loss-history/">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/hair-loss-history/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Hair Loss History</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.hairLossHistory }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/gallery/">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/gallery/')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Gallery</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.gallery }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/videos">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/videos')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">VIDEOS</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.videos }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/blogs">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/blogs')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">Blogs</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.blogs }}</p>
                     </div>
-                </nuxt-link><nuxt-link class="txt-header poiter text-dark" to="/contact">
+                </nuxt-link><nuxt-link class="txt-header poiter text-dark" :to="localizedTo('/contact')">
                     <div class="d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center">
-                        <p class="text-uppercase font-size-reponsive-header">contact</p>
+                        <p class="text-uppercase font-size-reponsive-header">{{ navContent.contact }}</p>
                     </div>
                 </nuxt-link></div>
         </div><!-- End: 1 --><!-- Start: 2 -->
@@ -131,16 +131,16 @@
                         <div>
                             <div class="d-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><nuxt-link class="text-white poiter" :to="webConfig.linkFb"><i class="fa fa-facebook-f mx-2 fs-5"></i></nuxt-link><nuxt-link class="text-white poiter" :to="webConfig.linkYoutube"><i class="fa fa-youtube-play mx-2 fs-5"></i></nuxt-link><nuxt-link class="text-white poiter" :to="webConfig.linkInstagram"><i class="fa fa-instagram mx-2 fs-5"></i></nuxt-link><nuxt-link class="text-white poiter" :to="webConfig.linkTwitter"><i class="fa fa-twitter mx-2 fs-5"></i></nuxt-link></div>
                             <div class="d-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><nuxt-link class="d-xl-flex justify-content-xl-center align-items-xl-center text-white text-decoration-none" :to="webConfig.linkGoogleMap">
-                                    <p>4.3 Stars 56 Reviews</p>
+                                    <p>{{ footerContent.starsReviews }}</p>
                                     <div><i class="fa fa-star mx-2 fs-5"></i><i class="fa fa-star mx-2 fs-5"></i><i class="fa fa-star mx-2 fs-5"></i><i class="fa fa-star mx-2 fs-5"></i></div>
                                 </nuxt-link></div>
                             <div class="d-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><a class="d-flex d-xl-flex d-xxl-flex justify-content-center justify-content-xl-center justify-content-xxl-center text-white text-decoration-none btn-hover" :href="'tel:'+webConfig.phoneNumber">
                                     <p class="d-none">PHONE:&nbsp;</p>
                                     <p>{{webConfig.phoneNumber}}</p>
                                 </a></div><!-- Start: btn email -->
-                            <div class="d-flex d-xxl-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><nuxt-link class="poiter text-decoration-none" to="/contact">
+                            <div class="d-flex d-xxl-flex justify-content-center justify-content-xl-end justify-content-xxl-end my-3"><nuxt-link class="poiter text-decoration-none" :to="localizedTo('/contact')">
                                     <div class="d-inline-block bg-white text-dark text-uppercase p-2">
-                                        <p>email us</p>
+                                        <p>{{ footerContent.emailUs }}</p>
                                     </div>
                                 </nuxt-link></div><!-- End: btn email -->
                         </div>
@@ -205,7 +205,7 @@
     const { isMobile,isDesktop } = useDevice();
     const route = useRoute();
 
-    const { navContent, isSpanishLang, englishLangLink, spanishLangLink, localizedTo } = useLangNav();
+    const { navContent, footerContent, isSpanishLang, englishLangLink, spanishLangLink, localizedTo } = useLangNav();
 
     
     
