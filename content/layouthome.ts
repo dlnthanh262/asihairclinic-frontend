@@ -57,5 +57,9 @@ export const layouthomeContent = {
     contactUsUpper: 'CONTACT US',
     starsReviews: '4.3 Stars 56 Reviews',
     emailUs: 'email us',
+    legal: {
+      tagline: 'Houston Hair Restoration Specialists',
+      copyright: '© 2026 Aesthetic Hair Restoration. All Rights Reserved.',
+    },
   },
 } as const;

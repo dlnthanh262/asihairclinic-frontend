@@ -57,5 +57,9 @@ export const layouthomeContent = {
     contactUsUpper: 'CONTÁCTENOS',
     starsReviews: '4.3 Estrellas 56 Reseñas',
     emailUs: 'envíenos un correo',
+    legal: {
+      tagline: 'Especialistas en Restauración Capilar en Houston',
+      copyright: '© 2026 Aesthetic Hair Restoration. Todos los derechos reservados.',
+    },
   },
 } as const;

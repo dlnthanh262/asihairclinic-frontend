@@ -274,15 +274,17 @@
     </section>
     <section class="padding-section margin-section">
         <div class="container">
-            <div class="row g-0 shadow-custom">
-                <div class="col-12 col-xl-8 p-3 p-xl-5">
+            <div class="row g-0 shadow-custom justify-content-center">
+                <div class="col-12 col-xl-8 p-3 p-xl-5 text-center home-out-of-town-panel">
                     <p class="px-xl-0 fs-4 fw-bold py-xl-3 text-uppercase home-section-heading home-gallery-panel__heading">{{ homeContent.outOfTown.heading }}</p>
-                    <p v-for="(paragraph, index) in homeContent.outOfTown.paragraphs" :key="index" class="justified-text py-2 home-body-text">{{ paragraph }}</p>
-                    <nuxt-link class="text-decoration-none d-inline-block mt-3" :to="homeContent.outOfTown.ctaLink">
-                        <div class="btn-black btn-hover text-center" style="padding:0.875rem 2rem !important;border-radius:0;">
-                            <p class="text-uppercase mb-0 fw-bold">{{ homeContent.outOfTown.ctaLabel }}</p>
-                        </div>
-                    </nuxt-link>
+                    <p v-for="(paragraph, index) in homeContent.outOfTown.paragraphs" :key="index" class="py-2 home-body-text home-out-of-town-panel__paragraph">{{ paragraph }}</p>
+                    <div class="d-flex justify-content-center mt-4">
+                        <nuxt-link class="text-decoration-none" :to="homeContent.outOfTown.ctaLink">
+                            <div class="btn-black btn-hover text-center" style="padding:0.875rem 2rem !important;border-radius:0;">
+                                <p class="text-uppercase mb-0 fw-bold">{{ homeContent.outOfTown.ctaLabel }}</p>
+                            </div>
+                        </nuxt-link>
+                    </div>
                 </div>
             </div>
         </div>
@@ -312,12 +314,10 @@
                                     <div class="d-none d-xl-inline-block px-2 py-1 bg-white text-dark fs-6 py-2">
                                         <p class="text-uppercase">{{ card.desktopBadge }}</p>
                                     </div>
-                                    <p class="py-2">{{ card.description }}</p><nuxt-link class="text-decoration-none text-white" :to="card.link">
-                                        <div class="pt-3 pb-4 btn-hover">
-                                            <p class="text-uppercase">{{ card.ctaLabel }}</p>
-                                            <div class="mt-3" style="width: 60px;height: 3px;background: #ffffff;"></div>
-                                        </div>
-                                    </nuxt-link>
+                                    <p class="py-2">{{ card.description }}</p>
+                                    <div class="pt-3 pb-4">
+                                        <LearnMoreButton :to="card.link" :label="card.ctaLabel" />
+                                    </div>
                                 </div><!-- End: content -->
                             </div><!-- End: overlay hover --><img class="img-fluid" :src="card.imageSrc" :alt="card.imageAlt"><!-- Start: ovelay -->
                             <div class="overlay">
@@ -869,6 +869,13 @@ import 'splitpanes/dist/splitpanes.css';
 .home-gallery-panel__description {
   max-width: 42rem;
   margin: 0 auto;
+  line-height: 1.75;
+}
+
+.home-out-of-town-panel__paragraph {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.75;
 }
 

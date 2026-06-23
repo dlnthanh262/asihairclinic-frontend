@@ -222,7 +222,7 @@ export const homeContent = {
       overlayTitle: 'Hair Transplant Consultation',
       description:
         'Learn what to expect during your hair transplant consultation, including hair loss evaluation, treatment recommendations, and personalized planning with Dr. Do.',
-      ctaLabel: 'More About Hair Transplant Consultation',
+      ctaLabel: 'Learn More',
       link: '/patient-resources/hair-transplant-consultation/',
       imageSrc: '/static/faceialhair.png',
       imageAlt: 'Hair Transplant Consultation',
@@ -233,7 +233,7 @@ export const homeContent = {
       overlayTitle: 'Hair Transplant Cost',
       description:
         'Explore the factors that influence hair transplant cost, including graft count, treatment area, technique selection, and individualized treatment goals.',
-      ctaLabel: 'More About Hair Transplant Cost',
+      ctaLabel: 'Learn More',
       link: '/patient-resources/hair-transplant-cost/',
       imageSrc: '/static/main33335.png',
       imageAlt: 'Hair Transplant Cost',
@@ -244,7 +244,7 @@ export const homeContent = {
       overlayTitle: 'Stages of Hair Loss',
       description:
         'Understand the different stages of hair loss and how early diagnosis can help determine the most effective hair restoration treatment options.',
-      ctaLabel: 'More About Stages of Hair Loss',
+      ctaLabel: 'Learn More',
       link: '/patient-resources/stages-of-hair-loss/',
       imageSrc: '/static/dhihair.png',
       imageAlt: 'Stages of Hair Loss',

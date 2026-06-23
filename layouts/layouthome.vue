@@ -46,12 +46,9 @@
                 <div class="px-xl-5">
                     <h2 class="py-3 fw-lighter pe-5 fs-2 text-uppercase">{{ footerContent.consultation.heading }}</h2>
                     <p class="py-3">{{ footerContent.consultation.description }}</p>
-                    <div class="d-flex py-3"><nuxt-link class="text-decoration-none text-white" :to="localizedTo('/contact')">
-                            <div class="py-3 btn-hover-2">
-                                <p class="text-uppercase">{{ footerContent.consultation.cta }}</p>
-                                <div class="mt-3" style="width: 60px;height: 3px;background: #ffffff;"></div>
-                            </div>
-                        </nuxt-link></div>
+                    <div class="d-flex py-3">
+                        <LearnMoreButton :to="localizedTo('/contact')" :label="footerContent.consultation.cta" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,15 +146,9 @@
             </div>
         </div><!-- End: 2 --><!-- Start: 3 -->
         <div class="p-3 p-xl-5">
-            <div class="d-flex flex-column justify-content-between flex-xl-row align-items-xl-center px-xl-5">
-                <div class="d-flex flex-column flex-xl-row justify-content-xl-center align-items-xl-center">
-                    <p class="text-center fw-bold mt-3 mt-xl-0">{{webConfig.nameStore}}</p><a v-if="linkCopyright" class="ms-3 text-decoration-none text-dark btn-hover-2" :href="linkCopyright" target="_blank" rel="noopener">
-                        <p class="text-center py-3">{{webConfig.copyright}}</p>
-                    </a>
-                    <p v-else class="text-center py-3 ms-3">{{webConfig.copyright}}</p>
-                </div><nuxt-link class="text-decoration-none text-dark" to="/">
-                    <p class="text-center py-3 d-none">PRIVACY POLICY</p>
-                </nuxt-link>
+            <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center px-xl-5 footer-legal">
+                <p class="text-center text-xl-start mb-0 py-2 py-xl-0 footer-legal__tagline">{{ footerContent.legal.tagline }}</p>
+                <p class="text-center text-xl-end mb-0 py-2 py-xl-0 footer-legal__copyright">{{ footerContent.legal.copyright }}</p>
             </div>
         </div><!-- End: 3 -->
     </footer><client-only><b-offcanvas placement="top" backdrop id="offcanvas-1" class="h-100 delete-canvas-header" v-model="isshowoffcanvas">
@@ -297,7 +288,6 @@
         
 
         let webConfig = await useWebConfig();
-        const linkCopyright = useLinkCopyright(webConfig);
 
 
 
